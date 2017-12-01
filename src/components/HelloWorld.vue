@@ -24,15 +24,6 @@ import resource from "vue-resource";
 export default {
   name: "HelloWorld",
   data() {
-    var data1 = new Vue({
-      // el:"#types",
-      data: {
-        object: {
-          name: "测试",
-          age: 18
-        }
-      }
-    });
     return {
       // msg: "Welcome to Your Vue.js App",
       httpResult: null,
