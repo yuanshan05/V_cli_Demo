@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import GoodsType from '@/components/GoodsType'
 import Items from '@/components/Items'
+import GoodsItem from '@/components/GoodsItem' 
 
 Vue.use(Router)
 //const goodsType=require.ensure([], () => r(require('../Components/GoodsType')), 'goodstype')
@@ -23,7 +24,14 @@ export default new Router({
     {
       path: '/goods',
       name: 'goodstype',
-      component: GoodsType
+      component: GoodsType,
+      children:[
+        {
+          path:'goodsitem',
+          name:'goodsitem',
+          component:GoodsItem
+        }
+      ]
     },
     {
       path: '/items/:id',

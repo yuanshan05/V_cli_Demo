@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>Items</p>
-        <p>{{Id}}</p>
+        <p>{{Id}}</p>        
     </div>
 </template>
 <script>
