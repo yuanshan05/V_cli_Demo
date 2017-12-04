@@ -5,7 +5,6 @@
         <router-view></router-view>
         <div class="">
             <input v-bind="{inputValue}" type="text"/>
-            <p>{{inputValue}}</p>
         </div>
     </div>
 </template>
