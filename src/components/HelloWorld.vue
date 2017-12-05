@@ -9,7 +9,7 @@
     <li>
       <label>名称</label> -- <label>ID</label> -- <label>乐园ID</label>
     </li>
-      <li v-for="item of vueSS">       
+      <li v-for="item of vueSS" v-bind:key="item.id">       
          {{item.name}} -- {{item.id}} --{{item.oparkId}}   
       </li>
     </ul> 

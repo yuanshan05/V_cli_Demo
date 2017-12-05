@@ -10,6 +10,8 @@
         <router-link :to="{name:'Items',params:{id:2}}">Items2</router-link>
         <br/>
         <router-link :to="{name:'Items',params:{id:1}}">Items1</router-link>
+        <br/>
+        <router-link :to="{name:'Child'}">Children</router-link>
       </div>
       <div class="col-md-6">
         <router-view/>

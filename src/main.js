@@ -5,20 +5,12 @@ import App from './App'
 import router from './router'
 import resource from "vue-resource"
 
-Vue.config.productionTip = false
-// var VueResource = require('vue-resource');
-
-// Vue.use(VueResource);
+Vue.config.productionTip = false;
 Vue.use(resource);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  // http:{
-  //   headers: {
-  //     Authorization: 'Basic YXBpOnBhc3N3b3Jk'
-  //   }
-  //  },
   template: '<App/>',
   components: { App }
 }).$mount('#app')
